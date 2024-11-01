@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_site_config_contact_infos",
+  "info": {
+    "displayName": "Contact Info",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "string"
+    }
+  }
+}

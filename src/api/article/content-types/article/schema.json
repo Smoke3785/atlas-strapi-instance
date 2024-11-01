@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "derived_data": {
+      "configurable": false,
+      "private": false,
+      "type": "json"
+    },
+    "title": {
+      "type": "customField",
+      "options": {
+        "output": "html"
+      },
+      "customField": "plugin::bold-title-editor.title",
+      "renderMarkup": true,
+      "required": false
+    },
+    "body": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::plugin-atlas-ckeditor.CKEditor",
+      "generateLlmSnippet": true,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "llm_snippets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::llm-snippet.llm-snippet",
+      "inversedBy": "articles"
+    }
+  }
+}

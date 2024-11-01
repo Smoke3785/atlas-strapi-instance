@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "llm_snippets",
+  "info": {
+    "singularName": "llm-snippet",
+    "pluralName": "llm-snippets",
+    "displayName": "LLM Snippet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "text"
+    },
+    "contentType": {
+      "type": "string",
+      "private": true
+    },
+    "field": {
+      "type": "string",
+      "private": true
+    },
+    "entryId": {
+      "type": "integer",
+      "private": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "llm_snippets"
+    }
+  }
+}

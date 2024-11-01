@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "esnext",
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowJs": true
+  },
+  "ts-node": {
+    "esm": true /* ... Line to be added ... */
+  },
+  "include": ["./*.ts"]
+}

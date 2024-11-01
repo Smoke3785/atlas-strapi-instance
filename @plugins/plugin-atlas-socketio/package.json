@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "plugin-atlas-socketio",
+  "version": "2.0.6",
+  "description": "A plugin for Strapi CMS that provides the ability for Socket IO integration",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "plugin",
+    "strapi plugin",
+    "socket",
+    "socket io",
+    "io"
+  ],
+  "homepage": "https://github.com/ComfortablyCoding/plugin-atlas-socketio#readme",
+  "bugs": {
+    "url": "https://github.com/ComfortablyCoding/plugin-atlas-socketio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ComfortablyCoding/plugin-atlas-socketio.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "@ComfortablyCoding",
+    "url": "https://github.com/ComfortablyCoding"
+  },
+  "maintainers": [
+    {
+      "name": "@ComfortablyCoding",
+      "url": "https://github.com/ComfortablyCoding",
+      "lead": true
+    },
+    {
+      "name": "@hrdunn",
+      "url": "https://github.com/hrdunn"
+    }
+  ],
+  "scripts": {
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:preview": "vitepress preview docs",
+    "build": "echo 'No build script defined for plugin-atlas-socketio'",
+    "format": "prettier --write \"./**/*.{js,json,yml,md}\"",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.6",
+    "socket.io": "^4.7.2",
+    "strapi-plugin-country-select": "^1.0.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@strapi/eslint-config": "^0.2.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.1.0",
+    "vitepress": "^1.0.0-rc.29"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.14.6",
+    "@strapi/utils": "^4.14.6"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "name": "plugin-atlas-socketio",
+    "displayName": "IO",
+    "description": "A plugin for Strapi CMS that provides the ability for Socket IO integration",
+    "kind": "plugin"
+  },
+  "overrides": {
+    "@strapi/admin": "4.14.60"
+  }
+}

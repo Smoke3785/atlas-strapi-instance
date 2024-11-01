@@ -1,0 +1,26 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "nixpacksPlan": {
+      "phases": {
+        "install": {
+          "cmds": [
+            "echo [Iliad] Running install phase",
+            "npm install",
+            "ls -la",
+            "node scripts/strapi-transplant.js",
+            "echo [Iliad] Install phase complete"
+          ]
+        },
+        "build": {
+          "cmds": [
+            "echo [Iliad] Running build phase",
+            "node scripts/build-plugins.js",
+            "strapi build",
+            "echo [Iliad] Build phase complete"
+          ]
+        }
+      }
+    }
+  }
+}

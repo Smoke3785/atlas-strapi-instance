@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "static_llm_snippets",
+  "info": {
+    "singularName": "static-llm-snippet",
+    "pluralName": "static-llm-snippets",
+    "displayName": "Static LLM Snippet"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "llmSnippet": {
+      "displayName": "LLM Snippet",
+      "type": "component",
+      "repeatable": true,
+      "component": "llm.llm-snippet"
+    }
+  }
+}

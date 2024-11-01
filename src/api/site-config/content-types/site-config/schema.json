@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configs",
+  "info": {
+    "singularName": "site-config",
+    "pluralName": "site-configs",
+    "displayName": "Site Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "socialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "misc.social-media"
+    },
+    "contactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "site-config.contact-info"
+    }
+  }
+}

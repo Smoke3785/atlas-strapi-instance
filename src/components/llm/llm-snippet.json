@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_llm_llm_snippets",
+  "info": {
+    "displayName": "LLM Snippet",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "snippetContent": {
+      "type": "text"
+    }
+  }
+}

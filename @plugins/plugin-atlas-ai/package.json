@@ -1,0 +1,63 @@
+{
+  "name": "plugin-atlas-ai",
+  "version": "0.0.0",
+  "description": "AI Assistant for Iliad's Atlas Suite",
+  "license": "MIT",
+  "author": {
+    "name": "Iliad.dev"
+  },
+  "maintainers": [
+    {
+      "name": "Owen Rossi-Keen"
+    }
+  ],
+  "scripts": {
+    "admin": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.server.json",
+    "develop": "tsc -p tsconfig.server.json -w"
+  },
+  "dependencies": {
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "axios": "^1.7.7",
+    "jsdom": "^25.0.1",
+    "openai": "^4.67.1",
+    "prop-types": "^15.7.2",
+    "react-helmet": "^6.1.0",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@strapi/typescript-utils": "^4.6.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.28",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "@strapi/design-system": "1.19.0",
+    "@strapi/strapi": "^4.14.5",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "overrides": {
+    "@strapi/admin": "4.14.60"
+  },
+  "strapi": {
+    "name": "Atlas AI",
+    "description": "AI Assistant for Iliad's Atlas Suite",
+    "kind": "plugin"
+  }
+}
